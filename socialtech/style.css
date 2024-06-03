@@ -1,3 +1,4 @@
+/* PC、スマホ共通スタイル */
 body {
   font-family:"Source Sans Pro","Hiragino Kaku Gothic ProN", Meiryo, Arial, sans-serif;
 }
@@ -6,37 +7,82 @@ p {
   font-size: 15px;
 }
 
-
+/* PC用のスタイル */
 body {
   max-width: 1080px;
   min-width: 960px;
   margin: 0 auto 0 auto;
 }
 
+
+/* ヘッダー */
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /*均等配置 最初のアイテムは先頭に寄せ、最後のアイテムは末尾に寄せる*/
 }
 
+/* ナビゲーションのレイアウト */
 #nav-pc {
   font-size: 14px;
   padding-top: 15px;
 }
 
+/* ナビゲーションのリンクの装飾設定 */
 #nav-pc > a {
   text-decoration: none;
   margin-left: 20px;
 }
-#nav-pc > a:link {
+#nav-pc > a:link {  /*未訪問のリンク*/
   color: #0d0d0d;
 }
-#nav-pc > a:visited {
+#nav-pc > a:visited {   /*訪問済みのリンク*/
   color: #0d0d0d;
 }
-#nav-pc > a:hover {
+#nav-pc > a:hover {    /*マウスのカーソルが乗っているとき*/
   /* color: #0d0d0d; */
   text-decoration: underline;
 }
-#nav-pc > a:active {
+#nav-pc > a:active {   /*アクティブ状態（マウスを左クリックしてから離すまで）のとき*/
   color: #0d0d0d;
 }
+
+
+/* メイン */
+#main-visual {
+  position: relative;
+  height: 400px;
+}
+
+#main-message {
+  position: absolute;  /*親要素を基準にした絶対位置で配置するための指定*/
+  top: 0;
+  left: 0;  /*親要素の左上に配置される*/
+  background-color: #2710d5;
+  color: #ffffff;
+  border-radius: 0 0 476px 0;  /*要素を角丸にする「border-radius：左上 右上 右下 左下;」radius₌半径*/
+  max-width: 620px;
+  height: 100%;
+  width: 100%;
+  z-index: 11;  /*要素の重なり順を指定する。要素ごとに数字を指定することで、大きい数字を指定した要素が上に重なる*/
+}
+
+#main-message > h1 {
+  font-size: 60px;
+  font-weight: bold;
+  margin: 100px 0 0 50px;
+}
+
+#main-message > p { 
+  font-size: 28px;
+  margin: 0 0 0 50px;
+}
+
+#main-visual > img {
+  max-width: 620px;
+  border-radius: 476px 0 0 0;
+  position: absolute;
+  top: 0;
+  right: 0;  /*親要素の右上に配置される*/
+  z-index: 10;
+}
+
