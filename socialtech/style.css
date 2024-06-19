@@ -327,3 +327,131 @@ h3 {
 .vision-box > span > p {
   margin-top: 10px;
 }
+
+/* COMPANY */
+#company {
+  margin: 80px auto;
+}
+
+#company-table {
+  width: 100%;
+}
+
+/* 2行目以降の見出し */
+.tableheader {
+  text-align:left;
+  /* 文字の位置 */
+  padding: 20px;
+  border-bottom-color:#2710d5;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  width: 100px;
+}
+
+/* 1行目の見出し */
+.tableheader-first {
+  text-align: left;
+  padding: 20px;
+  border-bottom-color: #2710d5;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-top-color: #2710d5;
+  border-top-width: 1px;
+  border-top-style: solid;
+  width: 100px;
+}
+
+.cell {
+  padding: 30px;
+  border-bottom-color: #ececec;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+
+.cell-first {
+  padding: 30px;
+  border-bottom-color: #ececec;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-top-color: #ececec;
+  border-top-width: 1px;
+  border-top-style: solid;
+}
+
+#company > iframe {
+  width: 100%;
+  height: 368px;
+  margin-top: 40px;
+}
+
+/* お問い合わせ */
+#contact {
+  margin: 80px auto 80px auto;
+}
+
+/* 外枠 */
+#contact > form > div {
+  display: flex;
+  flex-direction: row;
+  /* ↑flex-direction₌Flexコンテナ内の子要素の配置方向を指定。
+  row₌子要素を左から右に配置する(横並び)=>各フォームのラベルと入力欄が横並びになる */
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+}
+
+/* 左列の見出し */
+.contact-heading {
+  width: 240px;
+  align-self: center;
+}
+
+/* 見出しのラベル */
+.contact-label {
+  font-weight: bold;
+}
+
+.contact-span {
+  color: #ce2222;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+/* テキストボックス */
+.contact-textbox {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  /* ↑枠線0、非表示 。↓枠線あり*/
+  border-bottom-width: 1px;
+  border-bottom-color: #707070;
+  border-bottom-style: solid;
+  background-color: #fafafa;
+  width: 400px;
+  height: 56px;
+}
+
+/* お問い合わせ内容のテキストエリア */
+.contact-textarea {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom-width: 1px;
+  border-bottom-color: #707070;
+  border-bottom-style: solid;
+  background-color: #fafafa;
+  width: 400px;
+  height: 200px;
+}
+
+/* 個人情報の取り扱い */
+details {
+  width: 700px;
+}
+details > div {
+  background-color: #fafafa;
+  padding: 20px;
+} 
+details > div > span {
+  font-weight: bold;
+}
+
